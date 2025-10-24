@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+:root {
+    font-size: 62.5%;
+}
+
+#page {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+body {
+    font-size: 1.6rem;
+    background: oklch(41.502% 0.21854 299.887);
+    color: #FFF;
+}
+
+header {
+    padding-block: 2rem;
+    text-align: center;
+}
+
+fieldset {
+    padding: 1.5rem;
+}
+
+input {
+    display: block;
+    margin-top: .6rem;
+    padding: .7rem;
+    border-radius: 1rem;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+input:focus {
+    outline: 2px solid oklch(76.463% 0.15148 229.462);
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+input[type=file] {
+    color: #FFF;
+}
+
+input[type=checkbox],
+input[radio] {
+    display: inline-block;
+    outline: none;
+}
+
+fieldset:nth-of-type(2) > div {
+    margin-bottom: 2rem;
+}
+
+textarea {
+    display:block;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    resize: none;
+}
+
+textarea:focus {
+    outline: 2px solid oklch(69.6% 0.17 162);
+}
+
+select {
+    padding: .0rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+button {
+    margin-bottom: 2rem;
+    padding: .6rem 1rem;
+    background: oklch(59.6% 0.145 163.225);
+    border: none;
+    border-radius: 1rem;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+button:hover {
+    background: oklch(69.6% 0.17 162.48);
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    #page {
+        padding-inline: 2rem;
+    }
+}
